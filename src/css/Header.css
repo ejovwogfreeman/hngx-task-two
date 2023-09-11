@@ -1,0 +1,7 @@
+.header {
+  background-image: url("../images/Poster.png");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
