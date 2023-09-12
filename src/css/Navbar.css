@@ -2,8 +2,46 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 80px;
 }
-
+.navbar span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo span {
+  margin-left: 20px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid white;
+  border-radius: 3px;
+  width: 300px;
+  padding: 5px 10px;
+}
+.search input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 90%;
+}
+.search svg {
+  color: white;
+}
+.auth {
+  display: flex;
+  align-items: center;
+}
+.auth span {
+  margin-right: 20px;
+}
 .icon {
   background-color: #be123c;
   display: flex;

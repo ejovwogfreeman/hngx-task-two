@@ -11,8 +11,8 @@ const Navbar = () => {
         <img src={logo} alt="" />
         <span>MovieBox</span>
       </div>
-      <div>
-        <input type="text" />
+      <div className="search">
+        <input type="text" placeholder="what do you want to watch?" />
         <BsSearch />
       </div>
       <div className="auth">
