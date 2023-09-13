@@ -1,6 +1,6 @@
 # HNGx MOVIE BOX
 
-The HNGx movieBox is a movie website just like Netflix or Youtube, it provides varieties of movies for viewers, it a stage two task for the inters at the hng program.
+The HNGx movieBox is a movie website just like Netflix or Youtube, it provides varieties of movies for viewers, it is the stage two task for the inters at the HNGx program.
 
 ![projcet](/src/images/movieBox.jpg)
 
