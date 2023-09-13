@@ -17,7 +17,8 @@
 }
 
 .header p {
-  width: 300px;
+  width: 350px;
+  line-height: 2rem;
 }
 
 .header a {

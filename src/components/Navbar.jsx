@@ -3,14 +3,15 @@ import logo from "../images/tv.png";
 import { BsSearch } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
 import "../css/Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo">
+      <Link to="/" className="logo" style={{ background: "transparent" }}>
         <img src={logo} alt="" />
         <span>MovieBox</span>
-      </div>
+      </Link>
       <div className="search">
         <input type="text" placeholder="what do you want to watch?" />
         <BsSearch />

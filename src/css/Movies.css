@@ -25,7 +25,7 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
-.movies div img {
+.movies a img {
   width: 100%;
 }
 

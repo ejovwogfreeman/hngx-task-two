@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 const Movies = () => {
   const movies = [
     {
+      id: 1,
       image: movie,
       duration: "USA, 2016 - Current",
       title: "Spier Man",
@@ -15,6 +16,7 @@ const Movies = () => {
       tags: ["Action", "Adventure", "Horror"],
     },
     {
+      id: 2,
       image: movie,
       duration: "USA, 2016 - Current",
       title: "Spier Man",
@@ -23,6 +25,7 @@ const Movies = () => {
       tags: ["Action", "Adventure", "Horror"],
     },
     {
+      id: 3,
       image: movie,
       duration: "USA, 2016 - Current",
       title: "Spier Man",
@@ -31,6 +34,7 @@ const Movies = () => {
       tags: ["Action", "Adventure", "Horror"],
     },
     {
+      id: 4,
       image: movie,
       duration: "USA, 2016 - Current",
       title: "Spier Man",
@@ -39,6 +43,7 @@ const Movies = () => {
       tags: ["Action", "Adventure", "Horror"],
     },
     {
+      id: 5,
       image: movie,
       duration: "USA, 2016 - Current",
       title: "Spier Man",
@@ -47,6 +52,7 @@ const Movies = () => {
       tags: ["Action", "Adventure", "Horror"],
     },
     {
+      id: 6,
       image: movie,
       duration: "USA, 2016 - Current",
       title: "Spier Man",
@@ -55,6 +61,7 @@ const Movies = () => {
       tags: ["Action", "Adventure", "Horror"],
     },
     {
+      id: 7,
       image: movie,
       duration: "USA, 2016 - Current",
       title: "Spier Man",
@@ -63,6 +70,7 @@ const Movies = () => {
       tags: ["Action", "Adventure", "Horror"],
     },
     {
+      id: 8,
       image: movie,
       duration: "USA, 2016 - Current",
       title: "Spier Man",
@@ -71,6 +79,7 @@ const Movies = () => {
       tags: ["Action", "Adventure", "Horror"],
     },
     {
+      id: 9,
       image: movie,
       duration: "USA, 2016 - Current",
       title: "Spier Man",
@@ -79,6 +88,7 @@ const Movies = () => {
       tags: ["Action", "Adventure", "Horror"],
     },
     {
+      id: 10,
       image: movie,
       duration: "USA, 2016 - Current",
       title: "Spier Man",
@@ -87,6 +97,7 @@ const Movies = () => {
       tags: ["Action", "Adventure", "Horror"],
     },
     {
+      id: 11,
       image: movie,
       duration: "USA, 2016 - Current",
       title: "Spier Man",
@@ -95,6 +106,7 @@ const Movies = () => {
       tags: ["Action", "Adventure", "Horror"],
     },
     {
+      id: 12,
       image: movie,
       duration: "USA, 2016 - Current",
       title: "Spier Man",
@@ -115,7 +127,7 @@ const Movies = () => {
       <div className="movies">
         {movies.map((x) => {
           return (
-            <div>
+            <Link to={`movie/${x.id}`}>
               <img src={x.image} alt="" />
               <small>{x.duration}</small>
               <h4>{x.title}</h4>
@@ -130,7 +142,7 @@ const Movies = () => {
                 <small>{x.percent}</small>
               </span>
               <small>{x.tags.join()}</small>
-            </div>
+            </Link>
           );
         })}
       </div>

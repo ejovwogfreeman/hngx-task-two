@@ -18,7 +18,7 @@ const Header = () => {
           assassins' guild, and with a $14 million price tag on his head, he is
           the target of hit men and women everywhere.
         </p>
-        <Link to="">
+        <Link to="" style={{ width: "200px" }}>
           <AiFillPlayCircle />
           <span>WATCH TRAILER</span>
         </Link>
