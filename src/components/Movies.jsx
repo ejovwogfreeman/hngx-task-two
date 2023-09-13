@@ -3,6 +3,9 @@ import movie from "../images/movie.png";
 import "../css/Movies.css";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { AiFillHeart } from "react-icons/ai";
+import img1 from "../images/imbd.png";
+import img2 from "../images/fruit.png";
 
 const Movies = () => {
   const movies = [
@@ -128,7 +131,11 @@ const Movies = () => {
         {movies.map((x) => {
           return (
             <Link to={`movie/${x.id}`}>
-              <img src={x.image} alt="" />
+              <div className="svg-box">
+                {x.id === 1 ? <span>TV SERIES</span> : <small></small>}
+                <AiFillHeart />
+              </div>
+              <img src={x.image} alt="" className="img" />
               <small>{x.duration}</small>
               <h4>{x.title}</h4>
               <span
@@ -138,8 +145,16 @@ const Movies = () => {
                   justifyContent: "space-between",
                 }}
               >
-                <small>{x.rating}</small>
-                <small>{x.percent}</small>
+                <div className="ratings">
+                  <span>
+                    <img src={img1} alt="" />
+                    <small>{x.percent}</small>
+                  </span>
+                  <span>
+                    <img src={img2} alt="" />
+                    <small>{x.rating}</small>
+                  </span>
+                </div>
               </span>
               <small>{x.tags.join()}</small>
             </Link>
