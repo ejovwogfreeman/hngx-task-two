@@ -12,7 +12,7 @@ const Movies = () => {
     {
       id: 1,
       image: movie,
-      duration: "USA, 2016 - Current",
+      durationdate: "USA, 2016 - Current",
       title: "Spier Man",
       rating: "89/100",
       percent: "87%",
@@ -21,7 +21,7 @@ const Movies = () => {
     {
       id: 2,
       image: movie,
-      duration: "USA, 2016 - Current",
+      date: "USA, 2016 - Current",
       title: "Spier Man",
       rating: "89/100",
       percent: "87%",
@@ -30,7 +30,7 @@ const Movies = () => {
     {
       id: 3,
       image: movie,
-      duration: "USA, 2016 - Current",
+      date: "USA, 2016 - Current",
       title: "Spier Man",
       rating: "89/100",
       percent: "87%",
@@ -39,7 +39,7 @@ const Movies = () => {
     {
       id: 4,
       image: movie,
-      duration: "USA, 2016 - Current",
+      date: "USA, 2016 - Current",
       title: "Spier Man",
       rating: "89/100",
       percent: "87%",
@@ -48,7 +48,7 @@ const Movies = () => {
     {
       id: 5,
       image: movie,
-      duration: "USA, 2016 - Current",
+      date: "USA, 2016 - Current",
       title: "Spier Man",
       rating: "89/100",
       percent: "87%",
@@ -57,7 +57,7 @@ const Movies = () => {
     {
       id: 6,
       image: movie,
-      duration: "USA, 2016 - Current",
+      date: "USA, 2016 - Current",
       title: "Spier Man",
       rating: "89/100",
       percent: "87%",
@@ -66,7 +66,7 @@ const Movies = () => {
     {
       id: 7,
       image: movie,
-      duration: "USA, 2016 - Current",
+      date: "USA, 2016 - Current",
       title: "Spier Man",
       rating: "89/100",
       percent: "87%",
@@ -75,7 +75,7 @@ const Movies = () => {
     {
       id: 8,
       image: movie,
-      duration: "USA, 2016 - Current",
+      date: "USA, 2016 - Current",
       title: "Spier Man",
       rating: "89/100",
       percent: "87%",
@@ -84,7 +84,7 @@ const Movies = () => {
     {
       id: 9,
       image: movie,
-      duration: "USA, 2016 - Current",
+      date: "USA, 2016 - Current",
       title: "Spier Man",
       rating: "89/100",
       percent: "87%",
@@ -93,7 +93,7 @@ const Movies = () => {
     {
       id: 10,
       image: movie,
-      duration: "USA, 2016 - Current",
+      date: "USA, 2016 - Current",
       title: "Spier Man",
       rating: "89/100",
       percent: "87%",
@@ -102,7 +102,7 @@ const Movies = () => {
     {
       id: 11,
       image: movie,
-      duration: "USA, 2016 - Current",
+      date: "USA, 2016 - Current",
       title: "Spier Man",
       rating: "89/100",
       percent: "87%",
@@ -111,7 +111,7 @@ const Movies = () => {
     {
       id: 12,
       image: movie,
-      duration: "USA, 2016 - Current",
+      date: "USA, 2016 - Current",
       title: "Spier Man",
       rating: "89/100",
       percent: "87%",
@@ -130,14 +130,23 @@ const Movies = () => {
       <div className="movies">
         {movies.map((x) => {
           return (
-            <Link to={`movie/${x.id}`}>
+            <Link
+              className="movie-card"
+              data-testId="movie-card"
+              to={`movie/${x.id}`}
+            >
               <div className="svg-box">
                 {x.id === 1 ? <span>TV SERIES</span> : <small></small>}
                 <AiFillHeart />
               </div>
-              <img src={x.image} alt="" className="img" />
-              <small>{x.duration}</small>
-              <h4>{x.title}</h4>
+              <img
+                data-testId="movie-poster"
+                src={x.image}
+                alt=""
+                className="img"
+              />
+              <small data-testId="movie-release-date">{x.date}</small>
+              <h4 data-testid="movie-title">{x.title}</h4>
               <span
                 style={{
                   display: "flex",

@@ -26,7 +26,11 @@ const Movie = () => {
         <div className="movie-text">
           <div className="top">
             <div className="left">
-              <span>Top Gun: Maverick • 2022 • PG-13 • 12h 10m </span>
+              <span>
+                <span data-testId="movie-title">Top Gun: Maverick</span> •{" "}
+                <span data-testid="movie-release-date">2022</span>• PG-13 •{" "}
+                <span data-testId="movie-runtime">12h 10m</span>
+              </span>
               <small>Action</small>
               <small>Drama</small>
             </div>
@@ -39,7 +43,7 @@ const Movie = () => {
           </div>
           <div className="main">
             <div className="left">
-              <p className="about">
+              <p className="about" data-testId="movie-overview">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequuntur iure ipsam natus ullam sapiente, fugit perferendis
                 repellat vitae. Tenetur nesciunt quibusdam ducimus reprehenderit

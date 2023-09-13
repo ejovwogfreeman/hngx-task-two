@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# HNGx MOVIE BOX
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The HNGx movieBox is a movie website just like Netflix or Youtube, it provides varieties of movies for viewers, it a stage two task for the inters at the hng program.
 
-## Available Scripts
+![projcet](/src/images/movieBox.jpg)
 
-In the project directory, you can run:
+## Objective
 
-### `npm start`
+The objective of this task is to create a discovery web application that allows users to search for movies, view details about the them and save there favorite movies. This will be achived by consuming the TMBD API.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Requirements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. User Interface
+   interns should be ablen to create a visually appealing user interface for the application, using the figma design given.
 
-### `npm test`
+   - inters should display top 10 movies on the homepage
+   - they should be displayed in a grid layout with their move poster
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Movie Search
 
-### `npm run build`
+   - implement a search feature that allows user to search for movie by title
+   - Display search result including movie poster, titles, and release data.
+   - show an indicator while loading
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- JavaScript(React js)
+- CSS
+- React Icons
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the project to your github repository
+1. Clone the project down to your local repository `git clone @repository`
+1. Navigate to the repository on your local machine `cd @repository Name`
+1. run `npm install`
+1. finally run `npm start` to run live on your machine.
