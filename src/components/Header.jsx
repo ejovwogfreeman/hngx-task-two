@@ -6,10 +6,10 @@ import { AiFillPlayCircle } from "react-icons/ai";
 import img1 from "../images/imbd.png";
 import img2 from "../images/fruit.png";
 
-const Header = () => {
+const Header = ({ searchQuery, setSearchQuery }) => {
   return (
     <div className="header">
-      <Navbar />
+      <Navbar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <div className="text-box">
         <h1>
           John Wich 3: <br />

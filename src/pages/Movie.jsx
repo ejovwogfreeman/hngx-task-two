@@ -22,8 +22,6 @@ const Movie = () => {
       .then((data) => setMovie(data));
   }, [params.id, apiKey]);
 
-  console.log(movie);
-
   return (
     <>
       {!movie ? (
