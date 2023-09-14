@@ -35,7 +35,12 @@ const Movies = ({ topTen }) => {
                 alt=""
                 className="img"
               />
-              <small datatestid="movie-release-date">{x.release_date}</small>
+              <small
+                datatestid="movie-release-date"
+                style={{ display: "block", marginBottom: "10px" }}
+              >
+                {x.release_date}
+              </small>
               <h4 datatestid="movie-title">{x.original_title}</h4>
               <span
                 style={{
