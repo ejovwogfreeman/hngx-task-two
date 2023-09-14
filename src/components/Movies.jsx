@@ -1,5 +1,4 @@
 import React from "react";
-import movie from "../images/movie.png";
 import "../css/Movies.css";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -7,117 +6,7 @@ import { AiFillHeart } from "react-icons/ai";
 import img1 from "../images/imbd.png";
 import img2 from "../images/fruit.png";
 
-const Movies = () => {
-  const movies = [
-    {
-      id: 1,
-      image: movie,
-      durationdate: "USA, 2016 - Current",
-      title: "Spier Man",
-      rating: "89/100",
-      percent: "87%",
-      tags: ["Action", "Adventure", "Horror"],
-    },
-    {
-      id: 2,
-      image: movie,
-      date: "USA, 2016 - Current",
-      title: "Spier Man",
-      rating: "89/100",
-      percent: "87%",
-      tags: ["Action", "Adventure", "Horror"],
-    },
-    {
-      id: 3,
-      image: movie,
-      date: "USA, 2016 - Current",
-      title: "Spier Man",
-      rating: "89/100",
-      percent: "87%",
-      tags: ["Action", "Adventure", "Horror"],
-    },
-    {
-      id: 4,
-      image: movie,
-      date: "USA, 2016 - Current",
-      title: "Spier Man",
-      rating: "89/100",
-      percent: "87%",
-      tags: ["Action", "Adventure", "Horror"],
-    },
-    {
-      id: 5,
-      image: movie,
-      date: "USA, 2016 - Current",
-      title: "Spier Man",
-      rating: "89/100",
-      percent: "87%",
-      tags: ["Action", "Adventure", "Horror"],
-    },
-    {
-      id: 6,
-      image: movie,
-      date: "USA, 2016 - Current",
-      title: "Spier Man",
-      rating: "89/100",
-      percent: "87%",
-      tags: ["Action", "Adventure", "Horror"],
-    },
-    {
-      id: 7,
-      image: movie,
-      date: "USA, 2016 - Current",
-      title: "Spier Man",
-      rating: "89/100",
-      percent: "87%",
-      tags: ["Action", "Adventure", "Horror"],
-    },
-    {
-      id: 8,
-      image: movie,
-      date: "USA, 2016 - Current",
-      title: "Spier Man",
-      rating: "89/100",
-      percent: "87%",
-      tags: ["Action", "Adventure", "Horror"],
-    },
-    {
-      id: 9,
-      image: movie,
-      date: "USA, 2016 - Current",
-      title: "Spier Man",
-      rating: "89/100",
-      percent: "87%",
-      tags: ["Action", "Adventure", "Horror"],
-    },
-    {
-      id: 10,
-      image: movie,
-      date: "USA, 2016 - Current",
-      title: "Spier Man",
-      rating: "89/100",
-      percent: "87%",
-      tags: ["Action", "Adventure", "Horror"],
-    },
-    {
-      id: 11,
-      image: movie,
-      date: "USA, 2016 - Current",
-      title: "Spier Man",
-      rating: "89/100",
-      percent: "87%",
-      tags: ["Action", "Adventure", "Horror"],
-    },
-    {
-      id: 12,
-      image: movie,
-      date: "USA, 2016 - Current",
-      title: "Spier Man",
-      rating: "89/100",
-      percent: "87%",
-      tags: ["Action", "Adventure", "Horror"],
-    },
-  ];
+const Movies = ({ topTen }) => {
   return (
     <div className="movies-container">
       <section>
@@ -128,25 +17,26 @@ const Movies = () => {
         </Link>
       </section>
       <div className="movies">
-        {movies.map((x) => {
+        {topTen.map((x) => {
           return (
             <Link
               className="movie-card"
-              data-testId="movie-card"
+              datatestid="movie-card"
               to={`movie/${x.id}`}
+              key={x.id}
             >
               <div className="svg-box">
                 {x.id === 1 ? <span>TV SERIES</span> : <small></small>}
                 <AiFillHeart />
               </div>
               <img
-                data-testId="movie-poster"
-                src={x.image}
+                datatestid="movie-poster"
+                src={`https://image.tmdb.org/t/p/w500${x.poster_path}`}
                 alt=""
                 className="img"
               />
-              <small data-testId="movie-release-date">{x.date}</small>
-              <h4 data-testid="movie-title">{x.title}</h4>
+              <small datatestid="movie-release-date">{x.release_date}</small>
+              <h4 datatestid="movie-title">{x.original_title}</h4>
               <span
                 style={{
                   display: "flex",
@@ -157,15 +47,15 @@ const Movies = () => {
                 <div className="ratings">
                   <span>
                     <img src={img1} alt="" />
-                    <small>{x.percent}</small>
+                    <small>{x.popularity}/100</small>
                   </span>
                   <span>
                     <img src={img2} alt="" />
-                    <small>{x.rating}</small>
+                    <small>{x.popularity}%</small>
                   </span>
                 </div>
               </span>
-              <small>{x.tags.join()}</small>
+              <small>Action, Adventure, Horror</small>
             </Link>
           );
         })}
