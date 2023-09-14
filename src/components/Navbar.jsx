@@ -6,9 +6,17 @@ import "../css/Navbar.css";
 import { Link } from "react-router-dom";
 
 const Navbar = ({ searchQuery, setSearchQuery }) => {
+  const handleReloadClick = () => {
+    window.location.reload();
+  };
   return (
     <nav className="navbar">
-      <Link to="/" className="logo" style={{ background: "transparent" }}>
+      <Link
+        to="/"
+        className="logo"
+        style={{ background: "transparent" }}
+        onClick={handleReloadClick}
+      >
         <img src={logo} alt="" />
         <span>MovieBox</span>
       </Link>
