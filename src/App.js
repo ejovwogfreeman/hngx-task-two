@@ -14,7 +14,7 @@ function App() {
       .then((res) => res.json())
       .then((data) => setMovies(data.results))
       .catch((err) => console.log(err));
-  }, []);
+  }, [apiKey]);
 
   const topTen = movies.slice(0, 10);
 
