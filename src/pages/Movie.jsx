@@ -46,13 +46,13 @@ const Movie = () => {
               <div className="top">
                 <div className="left">
                   <span style={{ fontWeight: "bold" }}>
-                    <span datatestid="movie-title">Top Gun: Maverick</span> •{" "}
-                    <span datatestid="movie-release-date">
+                    <span data-testid="movie-title">Top Gun: Maverick</span> •{" "}
+                    <span data-testid="movie-release-date">
                       {new Date(movie.release_date).toUTCString()}
                     </span>
                     • PG-13 •{" "}
                     {typeof movie.runtime === "number" ? (
-                      <span datatestid="movie-runtime">
+                      <span data-testid="movie-runtime">
                         {<span>{Math.floor(movie.runtime / 60)}</span>}h{" "}
                         <span>{movie.runtime % 60}</span>m
                       </span>
@@ -72,7 +72,7 @@ const Movie = () => {
               </div>
               <div className="main">
                 <div className="left">
-                  <p className="about" datatestid="movie-overview">
+                  <p className="about" data-testid="movie-overview">
                     {movie.overview}
                   </p>{" "}
                   <br />

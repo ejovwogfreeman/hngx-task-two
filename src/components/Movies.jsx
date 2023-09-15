@@ -31,7 +31,7 @@ const Movies = ({ topTen, searchResults, loading }) => {
               return (
                 <Link
                   className="movie-card"
-                  datatestid="movie-card"
+                  data-testid="movie-card"
                   to={`movie/${x.id}`}
                   key={x.id}
                 >
@@ -46,18 +46,18 @@ const Movies = ({ topTen, searchResults, loading }) => {
                     />
                   </div>
                   <img
-                    datatestid="movie-poster"
+                    data-testid="movie-poster"
                     src={`https://image.tmdb.org/t/p/w500${x.poster_path}`}
                     alt=""
                     className="img"
                   />
                   <small
-                    datatestid="movie-release-date"
+                    data-testid="movie-release-date"
                     style={{ display: "block", marginBottom: "10px" }}
                   >
                     {x.release_date}
                   </small>
-                  <h4 datatestid="movie-title">{x.original_title}</h4>
+                  <h4 data-testid="movie-title">{x.original_title}</h4>
                   <span
                     style={{
                       display: "flex",
@@ -87,7 +87,7 @@ const Movies = ({ topTen, searchResults, loading }) => {
               return (
                 <Link
                   className="movie-card"
-                  datatestid="movie-card"
+                  data-testid="movie-card"
                   to={`movie/${x.id}`}
                   key={x.id}
                 >
@@ -102,18 +102,18 @@ const Movies = ({ topTen, searchResults, loading }) => {
                     />
                   </div>
                   <img
-                    datatestid="movie-poster"
+                    data-testid="movie-poster"
                     src={`https://image.tmdb.org/t/p/w500${x.poster_path}`}
                     alt=""
                     className="img"
                   />
                   <small
-                    datatestid="movie-release-date"
+                    data-testid="movie-release-date"
                     style={{ display: "block", marginBottom: "10px" }}
                   >
                     {x.release_date}
                   </small>
-                  <h4 datatestid="movie-title">{x.original_title}</h4>
+                  <h4 data-testid="movie-title">{x.original_title}</h4>
                   <span
                     style={{
                       display: "flex",
