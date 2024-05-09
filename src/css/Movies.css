@@ -83,11 +83,14 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .movies {
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .movies a .ratings {
+    display: block;
   }
 }
 /* @media screen and (max-width: 400px) {

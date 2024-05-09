@@ -171,3 +171,10 @@
   margin-left: 10px;
   font-size: 16px;
 }
+
+@media screen and (max-width: 1000px) {
+  .movie-container {
+    width: 1000px;
+    overflow-x: scroll;
+  }
+}

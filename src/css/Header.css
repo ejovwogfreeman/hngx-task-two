@@ -55,7 +55,7 @@
   margin-right: 5px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .header {
     text-align: center;
   }
@@ -66,9 +66,15 @@
     width: 300px;
     margin: auto;
   }
-  .header a {
+  .text-box {
+    text-align: center;
+  }
+  .header .ratings {
     margin: auto;
-    width: 150px;
     margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .watch-btn {
+    margin: auto;
   }
 }

@@ -12,7 +12,7 @@ const Header = ({ searchQuery, setSearchQuery }) => {
       <Navbar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <div className="text-box">
         <h1>
-          John Wich 3: <br />
+          John Wick 3: <br />
           Parabellum
         </h1>
         <div className="ratings">
@@ -30,7 +30,7 @@ const Header = ({ searchQuery, setSearchQuery }) => {
           assassins' guild, and with a $14 million price tag on his head, he is
           the target of hit men and women everywhere.
         </p>
-        <Link to="" style={{ width: "200px" }}>
+        <Link className="watch-btn" to="" style={{ width: "200px" }}>
           <AiFillPlayCircle />
           <span>WATCH TRAILER</span>
         </Link>
