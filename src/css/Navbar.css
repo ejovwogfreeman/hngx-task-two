@@ -68,6 +68,9 @@
   .navbar {
     position: relative;
   }
+  .navbar a {
+    margin: 0px;
+  }
   .search {
     position: absolute;
     width: 100%;
